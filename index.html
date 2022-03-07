@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- 引入样式 -->
-    <link rel="stylesheet" href="./css/layui.css">
     <!-- 引入公共样式 -->
     <link rel="stylesheet" href="./css/common.css">
+    <!-- 引入layui样式 -->
+    <link rel="stylesheet" href="./css/layui.css" media="all">
+    <!-- 引入swiper样式 -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <!-- 引入自己样式 -->
     <link rel="stylesheet" href="./css/index.css">
 
@@ -28,65 +30,214 @@
     </header>
     <!-- 主体 -->
     <main>
-        <!-- <div class="layui-row">
-            <div class="layui-col-md12">
-                <h1>企业面临的痛点</h1>
-            </div>
-        </div> -->
         <div class="content-title">
-            企业面临的痛点·Pain point
+            <h1>企业面临的痛点·Pain point</h1>
         </div>
+        <!-- 企业痛点 -->
         <div class="pain_box">
             <ul>
                 <li>
-                    <div class="pain-left"><img src="./images/ui (1).png" alt=""></div>
+                    <div class="pain-left "><img src="./images/ui (1).png" alt=""></div>
                     <div class="pain_right">
                         <div class="pain_title">费用成本高</div>
                         <div class="pain_cont">物价上涨、人力成本、管理成本、办公成本增加</div>
                     </div>
                 </li>
                 <li>
-                    <div class="pain-left"><img src="./images/ui (1).png" alt=""></div>
+                    <div class="pain-left"><img src="./images/ui (2).png" alt=""></div>
                     <div class="pain_right">
-                        <div class="pain_title">费用成本高</div>
-                        <div class="pain_cont">物价上涨、人力成本、管理成本、办公成本增加</div>
+                        <div class="pain_title">客户管理难</div>
+                        <div class="pain_cont">市场竞争激烈，客户管理繁琐，产出效率低</div>
                     </div>
                 </li>
                 <li>
-                    <div class="pain-left"><img src="./images/ui (1).png" alt=""></div>
+                    <div class="pain-left"><img src="./images/ui (3).png" alt=""></div>
                     <div class="pain_right">
-                        <div class="pain_title">费用成本高</div>
-                        <div class="pain_cont">物价上涨、人力成本、管理成本、办公成本增加</div>
+                        <div class="pain_title">员工流动率大</div>
+                        <div class="pain_cont">企业效率低，员工频繁离职，新人上手慢</div>
                     </div>
                 </li>
                 <li>
-                    <div class="pain-left"><img src="./images/ui (1).png" alt=""></div>
+                    <div class="pain-left"><img src="./images/ui (4).png" alt=""></div>
                     <div class="pain_right">
-                        <div class="pain_title">费用成本高</div>
-                        <div class="pain_cont">物价上涨、人力成本、管理成本、办公成本增加</div>
+                        <div class="pain_title">效率下降</div>
+                        <div class="pain_cont">一切流程人工操作，客户逐个跟踪，耗时耗力</div>
                     </div>
                 </li>
                 <li>
-                    <div class="pain-left"><img src="./images/ui (1).png" alt=""></div>
+                    <div class="pain-left"><img src="./images/ui (5).png" alt=""></div>
                     <div class="pain_right">
-                        <div class="pain_title">费用成本高</div>
-                        <div class="pain_cont">物价上涨、人力成本、管理成本、办公成本增加</div>
+                        <div class="pain_title">利润下降</div>
+                        <div class="pain_cont">成本年增加，销量降低，缺乏有力的获客营销</div>
                     </div>
                 </li>
                 <li>
-                    <div class="pain-left"><img src="./images/ui (1).png" alt=""></div>
+                    <div class="pain-left"><img src="./images/ui (6).png" alt=""></div>
                     <div class="pain_right">
-                        <div class="pain_title">费用成本高</div>
-                        <div class="pain_cont">物价上涨、人力成本、管理成本、办公成本增加</div>
+                        <div class="pain_title">发展前景迷茫</div>
+                        <div class="pain_cont">亟需实现企业数字化管理，拥抱互联网</div>
                     </div>
                 </li>
 
             </ul>
         </div>
+        <div class="content-title">
+            <h1><span>降本增效 协同办公</span></h1>
+            <h5>5亿用户，1900万组织&nbsp;&nbsp;&nbsp;&nbsp;智慧的老板们都选择使用钉钉里做办公管理
+            </h5>
+        </div>
+        <!-- 产品介绍 -->
+        <div class="content">
+            <div class="content-title">
+                <h1>产品介绍·Introduce</h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>钉钉专业版</li>
+                    <li>钉钉专属版</li>
+                    <li>钉钉定制版</li>
+                    <li>钉钉基础版</li>
+                </ul>
+            </div>
+            <div class="nav-content">
+                <ul>
+                    <li>
+                        <div class="con-left"><img src="./images/video (1).png" alt=""></div>
+                        <div class="con-right"><img src="./images/video (2).png" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="con-left"><img src="./images/video (1).jpg" alt=""></div>
+                        <div class="con-right"><img src="./images/video (3).png" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="con-left"><img src="./images/video (2).jpg" alt=""></div>
+                        <div class="con-right"><img src="./images/video (4).png" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="con-left"><img src="./images/video (3).jpg" alt=""></div>
+                        <div class="con-right"><img src="./images/video (5).png" alt=""></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 解决方案 -->
+        <div class="solution">
+            <div class="content-title">
+                <h1>钉钉<span>业财一体</span>解决方案·solution
+                </h1>
+                <h3>客户管理CRM+商品进销存+费控报销+财务管理</h3>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <li>
+                            <div class="solution_img">
+                                <img src="./images/Rotation (6).png" alt="">
+                                <div class="solution_title">&nbsp;&nbsp;简化审批流程</div>
+                            </div>
+                            <div class="solution_cont">线上审批，固化流程，关联异构系统数据，提效业务审批</div>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li>
+                            <div class="solution_img">
+                                <img src="./images/Rotation (6).png" alt="">
+                                <div class="solution_title">&nbsp;&nbsp;轻松把控财务</div>
+                            </div>
+                            <div class="solution_cont">覆盖从预算到支付全生命周期费用管控，实现业财一体化</div>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li>
+                            <div class="solution_img">
+                                <img src="./images/Rotation (6).png" alt="">
+                                <div class="solution_title">&nbsp;&nbsp;支持移动办公</div>
+                            </div>
+                            <div class="solution_cont">支持接入移动APP，移动审批、远程办公，工作沟通随时在线</div>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li>
+                            <div class="solution_img">
+                                <img src="./images/Rotation (6).png" alt="">
+                                <div class="solution_title">&nbsp;&nbsp;集成多种系统</div>
+                            </div>
+                            <div class="solution_cont">与30多种主流软件无缝集成，可读写软件的第三方数据</div>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li>
+                            <div class="solution_img">
+                                <img src="./images/Rotation (6).png" alt="">
+                                <div class="solution_title">&nbsp;&nbsp;沉淀企业知识</div>
+                            </div>
+                            <div class="solution_cont">搭建知识库、知识档案、知识管理等平台，赋能员工成长</div>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li>
+                            <div class="solution_img">
+                                <img src="./images/Rotation (6).png" alt="">
+                                <div class="solution_title">&nbsp;&nbsp;便捷公文管理</div>
+                            </div>
+                            <div class="solution_cont">公文在线编辑、编号、套红、电子签章，流转审批更快捷</div>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li>
+                            <div class="solution_img">
+                                <img src="./images/Rotation (6).png" alt="">
+                                <div class="solution_title">&nbsp;&nbsp;统一人事在线</div>
+                            </div>
+                            <div class="solution_cont">新人培训，人事档案，考勤管理与HR流程打通，科学培养人才</div>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li>
+                            <div class="solution_img">
+                                <img src="./images/Rotation (6).png" alt="">
+                                <div class="solution_title">&nbsp;&nbsp;客户管理在线</div>
+                            </div>
+                            <div class="solution_cont">客户档案、商机跟踪、合同管理、收款跟踪、销售报表，全程跟踪管理</div>
+                        </li>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
     </main>
 
     <script src="./js/layui.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            // autoplay: 3000,
+            // autoplayDisableOnInteraction: false,
+            // loop: true,
+            // slidesPerView: "auto",
+            // slidesPerView: 3,
+            // slidesPerGroup: 1,
+            // spaceBetween: 20,
+            // pagination: {
+            //     el: ".swiper-pagination",
+            //     clickable: true,
+            // },
+            autoplay: 3000,
+            autoplayDisableOnInteraction: false,
+            loop: true,
+            pagination: '.swiper-pagination',
+            paginationType: 'bullets',
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+            paginationClickable: true,
+            spaceBetween: 21
+        });
+    </script>
+
 </body>
 
 </html>
