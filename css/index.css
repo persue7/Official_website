@@ -353,6 +353,7 @@ footer {
     width: 200px;
     height: 444px;
     background: url(../images/mapleft2.png) no-repeat;
+    z-index: 2;
 }
 
 .Map-left h1 {
@@ -416,6 +417,7 @@ h3:hover {
     right: 0;
     width: 80px;
     height: 245px;
+    z-index: 2;
 }
 
 .Map-right p {
@@ -424,8 +426,46 @@ h3:hover {
 }
 
 .wechat {
+    position: relative;
     width: 80px;
     height: 80px;
+}
+
+.wechatimg {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: -250px;
+    width: 240px;
+    height: 244px;
+    text-align: center;
+    line-height: 210px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: -2px -2px 10px #333333;
+}
+
+.wechatimg img {
+    position: relative;
+    /* display: none; */
+    width: 180px;
+    height: 180px;
+}
+
+.wechatimg h1 {
+    margin-top: -10px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 17px;
+    color: #ccc;
+}
+
+.wechatimg i {
+    position: absolute;
+    top: -60px;
+    right: -8px;
+    font-size: 10px;
+    color: #ffffff;
 }
 
 .Map-right p:last-child {
@@ -442,8 +482,8 @@ h3:hover {
     height: 80px;
 }
 
-.contact-phone:hover .phone {
-    display: block;
+.contact-phone a:hover img {
+    transform: translateX(-80px);
 }
 
 .phone {
