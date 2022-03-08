@@ -420,9 +420,12 @@ h3:hover {
 
 .Map-right p {
     margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.wechat {
     width: 80px;
     height: 80px;
-    cursor: pointer;
 }
 
 .Map-right p:last-child {
@@ -437,6 +440,10 @@ h3:hover {
     position: relative;
     width: 80px;
     height: 80px;
+}
+
+.contact-phone:hover .phone {
+    display: block;
 }
 
 .phone {
@@ -481,11 +488,13 @@ h3:hover {
     font-weight: 700;
 }
 
-.phone h5 {
+
+/* 三角形 */
+
+.phone i {
     position: absolute;
     top: 34px;
-    right: -4px;
-    border-width: 4px 0 4px 4px;
-    border-style: solid;
-    border-color: transparent transparent transparent #ffffff;
+    right: -8px;
+    font-size: 5px;
+    color: #ffffff;
 }
