@@ -9,17 +9,17 @@
     <!-- 引入公共样式 -->
     <link rel="stylesheet" href="./css/common.css">
     <!-- 引入layui样式 -->
-    <link rel="stylesheet" href="./css/layui.css" media="all">
+    <link rel="stylesheet" href="./css/layui.css" media="all" type="text/css">
     <!-- 引入swiper样式 -->
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" type="text/css">
     <!-- 引入自己样式 -->
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
 
 </head>
 
 <body>
     <!-- 头部 -->
-    <header>
+    <header id="top">
         <a href="#">
             <img src="./images/title.jpg" alt="" class="headerImg">
         </a>
@@ -99,20 +99,38 @@
             <div class="nav-content">
                 <ul>
                     <li>
-                        <div class="con-left"><img src="./images/video (1).png" alt=""></div>
-                        <div class="con-right"><img src="./images/video (2).png" alt=""></div>
+                        <div class="con-left">
+                            <img src="./images/video (1).png" alt="">
+                            <i class="layui-icon layui-icon-play"></i> </div>
+                        <div class="con-right">
+                            <img src="./images/video (2).png" alt="">
+                        </div>
                     </li>
                     <li>
-                        <div class="con-left"><img src="./images/video (1).jpg" alt=""></div>
-                        <div class="con-right"><img src="./images/video (3).png" alt=""></div>
+                        <div class="con-left">
+                            <img src="./images/video (1).jpg" alt="">
+                            <i class="layui-icon layui-icon-play"></i>
+                        </div>
+                        <div class="con-right">
+                            <img src="./images/video (3).png" alt="">
+                        </div>
                     </li>
                     <li>
-                        <div class="con-left"><img src="./images/video (2).jpg" alt=""></div>
-                        <div class="con-right"><img src="./images/video (4).png" alt=""></div>
+                        <div class="con-left">
+                            <img src="./images/video (2).jpg" alt="">
+                            <i class="layui-icon layui-icon-play"></i>
+                        </div>
+                        <div class="con-right">
+                            <img src="./images/video (4).png" alt=""></div>
                     </li>
                     <li>
-                        <div class="con-left"><img src="./images/video (3).jpg" alt=""></div>
-                        <div class="con-right"><img src="./images/video (5).png" alt=""></div>
+                        <div class="con-left">
+                            <img src="./images/video (3).jpg" alt="">
+                            <i class="layui-icon layui-icon-play"></i>
+                        </div>
+                        <div class="con-right">
+                            <img src="./images/video (5).png" alt="">
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -252,12 +270,30 @@
             </div>
             <div class="case-content">
                 <ul>
-                    <li><img src="./images/case (1).png" alt=""><img src="./images/play.png" alt="" class="play"></li>
-                    <li><img src="./images/case (1).jpg" alt=""><img src="./images/play.png" alt="" class="play"></li>
-                    <li><img src="./images/case (2).jpg" alt=""><img src="./images/play.png" alt="" class="play"></li>
-                    <li><img src="./images/case (2).png" alt=""><img src="./images/play.png" alt="" class="play"></li>
-                    <li><img src="./images/case (3).jpg" alt=""><img src="./images/play.png" alt="" class="play"></li>
-                    <li><img src="./images/case (4).jpg" alt=""><img src="./images/play.png" alt="" class="play"></li>
+                    <li>
+                        <img src="./images/case (1).png" alt="">
+                        <img src="./images/play.png" alt="" class="play">
+                    </li>
+                    <li>
+                        <img src="./images/case (1).jpg" alt="">
+                        <img src="./images/play.png" alt="" class="play">
+                    </li>
+                    <li>
+                        <img src="./images/case (2).jpg" alt="">
+                        <img src="./images/play.png" alt="" class="play">
+                    </li>
+                    <li>
+                        <img src="./images/case (2).png" alt="">
+                        <img src="./images/play.png" alt="" class="play">
+                    </li>
+                    <li>
+                        <img src="./images/case (3).jpg" alt="">
+                        <img src="./images/play.png" alt="" class="play">
+                    </li>
+                    <li>
+                        <img src="./images/case (4).jpg" alt="">
+                        <img src="./images/play.png" alt="" class="play">
+                    </li>
                 </ul>
             </div>
         </div>
@@ -306,11 +342,13 @@
         <h1>钉钉专业版</h1>
         <h2>申请代金券</h2>
         <h3>钉钉定制版</h3>
-        <h4>返回顶部</h4>
+        <a href="#top">
+            <h4>返回顶部</h4>
+        </a>
     </div>
     <div class="Map-right">
         <p class="wechat">
-            <a href=""><img src="./images/mapright (1).png" alt=""></a>
+            <a href="javascript:;"><img src="./images/mapright (1).png" alt=""></a>
             <div class="wechatimg">
                 <img src="./images/wechat.jpg" alt="">
                 <h1>微信扫码咨询</h1>
@@ -330,8 +368,8 @@
     </div>
 
     <script src="./js/layui.js"></script>
-    <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
 
     <script>
         var swiper = new Swiper(".mySwiper", {

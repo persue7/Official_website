@@ -145,6 +145,7 @@ header a:last-child {
 .nav-content ul li {
     display: none;
     width: 1400px;
+    cursor: pointer;
 }
 
 .nav-content ul li:first-child {
@@ -153,12 +154,21 @@ header a:last-child {
 }
 
 .con-left {
+    position: relative;
     float: left;
 }
 
 .con-left img {
     width: 620px;
     height: 400px;
+}
+
+.con-left i {
+    position: absolute;
+    left: 273px;
+    top: 159px;
+    font-size: 76px;
+    opacity: .7;
 }
 
 .con-right {
@@ -414,7 +424,7 @@ h3:hover {
 .Map-right {
     position: fixed;
     top: 150px;
-    right: 0;
+    right: 5px;
     width: 80px;
     height: 245px;
     z-index: 2;
@@ -429,6 +439,17 @@ h3:hover {
     position: relative;
     width: 80px;
     height: 80px;
+}
+
+.wechat a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.wechat a:hover img {
+    transform: translateX(-80px);
 }
 
 .wechatimg {
@@ -480,6 +501,7 @@ h3:hover {
     position: relative;
     width: 80px;
     height: 80px;
+    overflow: hidden;
 }
 
 .contact-phone a:hover img {
@@ -537,4 +559,10 @@ h3:hover {
     right: -8px;
     font-size: 5px;
     color: #ffffff;
+}
+
+.layui-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 }
