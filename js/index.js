@@ -1,4 +1,5 @@
 window.addEventListener('load', function() {
+
     //右侧边栏电话
     var contact_phone = document.querySelector('.contact-phone')
     var phone = document.querySelector('.phone')
