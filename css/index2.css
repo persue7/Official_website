@@ -1,150 +1,154 @@
-html,
+@media screen and (max-width:1920px) {
+    body {
+        width: 1920px
+    }
+}
+
 body {
-    width: 100%;
-    font-size: 100%;
+    min-width: 320px;
+    max-width: 1920px;
+    width: 10rem;
 }
 
-@media only screen and (min-width: 320px) {
-    body {
-        font-size: 55.556% !important;
-    }
-}
 
-@media only screen and (min-width: 360px) {
-    body {
-        font-size: 62.5% !important;
-    }
-}
-
-@media only screen and (min-width: 375px) {
-    body {
-        font-size: 65.10417% !important;
-    }
-}
-
-@media only screen and (min-width: 414px) {
-    body {
-        font-size: 71.875% !important;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    body {
-        font-size: 133.3333% !important;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    body {
-        font-size: 177.77778% !important;
-    }
-}
+/* 头部 */
 
 header {
     position: relative;
-    width: 100%;
+    width: 10rem;
+    height: 2.9167rem;
 }
 
-header a:last-child {
-    position: absolute;
-    top: .3125rem;
-    left: .3125rem;
+header a {
+    display: inline-block
 }
 
 .headerImg {
-    width: 100%;
+    width: 10rem;
 }
+
+.logoImg {
+    position: absolute;
+    left: .0521rem;
+    top: .0521rem;
+    width: 1.6667rem;
+}
+
+
+/* 主体标题 */
 
 .content-title {
     text-align: center;
-    padding: 2.5rem 0;
+    vertical-align: middle;
+    padding: .2083rem 0;
 }
 
 .content-title h1 {
-    font-size: 2.4375rem;
+    font-size: .2031rem;
     font-weight: 700;
 }
 
 .content-title h5 {
-    margin-top: .3125rem;
-    letter-spacing: .125rem;
-    font-size: 1.125rem;
+    display: inline;
+    margin-top: .026rem;
+    letter-spacing: .0104rem;
+    font-size: .0938rem;
     font-weight: 400;
     color: #636363;
 }
 
 .content-title span {
+    font-size: .2031rem;
     color: #0189ff;
 }
 
 .content-title h3 {
-    margin-top: .3125rem;
-    letter-spacing: .125rem;
-    font-size: 1.0625rem;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    font-size: 17px;
     font-weight: 700;
 }
 
+
+/* 企业痛点 */
+
 .pain_box {
-    width: 75rem;
-    height: 20rem;
+    width: 6.25rem;
+    height: 1.6667rem;
     margin: 0 auto;
     background-color: #f8f8f8;
-    border-radius: .3125rem;
+    border-radius: .026rem;
 }
 
 .pain_box ul {
     display: flex;
-    padding-top: 2.5rem;
-    width: 75rem;
+    justify-content: space-around;
+    padding-top: .2083rem;
+    width: 6.25rem;
     flex-wrap: wrap;
 }
 
 .pain_box ul li {
     display: flex;
-    width: 22.5rem;
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-    margin-bottom: 2.5rem;
-    margin-top: .625rem;
+    width: 1.8229rem;
+    margin-left: .1042rem;
+    margin-right: .1042rem;
+    margin-bottom: .2083rem;
+    margin-top: .0521rem;
 }
 
 .pain-left img {
-    width: 4.875rem;
-    height: 4.875rem;
+    width: .4063rem;
+    height: .4063rem;
     cursor: pointer;
     transition: all 0.3s linear;
 }
 
 .pain-left img:hover {
-    transform: translateY(-0.625rem);
+    transform: translateY(-0.0521rem);
 }
 
 .pain_right {
-    width: 16.25rem;
-    height: 6.25rem;
-    margin-left: 1.25rem;
+    width: 1.3542rem;
+    height: .5208rem;
+    margin-left: .1042rem;
+}
+
+@media screen and (max-width:750px) {}
+
+* {
+    font-size: 100%;
+}
+
+span {
+    font-size: 0.5em;
 }
 
 .pain_title {
-    font-size: 1.375rem;
+    display: inline-block;
+    font-size: .1146rem;
     font-weight: 800;
 }
 
 .pain_cont {
-    font-size: 1rem;
-    line-height: 1.625rem;
+    display: inline-block;
+    font-size: .0833rem;
+    line-height: .1354rem;
     font-weight: 300;
 }
 
+
+/* 产品介绍 */
+
 .content {
     width: 100%;
-    height: 40.9375rem;
+    height: 3.4115rem;
     background-color: #f6f8f9;
 }
 
 .nav {
-    width: 66.25rem;
-    height: 3.75rem;
+    width: 5.5208rem;
+    height: .3125rem;
     margin: 0 auto;
     /* background-color: pink; */
 }
@@ -155,12 +159,12 @@ header a:last-child {
 }
 
 .nav ul li {
-    width: 15.625rem;
-    height: 3.75rem;
+    width: 1.3021rem;
+    height: .3125rem;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: .1042rem;
     font-weight: 700;
-    line-height: 3.75rem;
+    line-height: .3125rem;
     cursor: pointer;
     background-color: #f6f8f9;
 }
@@ -169,29 +173,29 @@ header a:last-child {
     background-color: #0089ff;
     font-weight: 700;
     color: #fff;
-    border-radius: 1.875rem;
+    border-radius: .1563rem;
 }
 
 .nav-content {
-    margin-top: 2.5rem;
-    /* height: 37.5rem; */
+    margin-top: .2083rem;
+    /* height: 3.125rem; */
 }
 
 .nav-content ul {
-    width: 75rem;
-    height: 2.5rem;
+    width: 6.25rem;
+    height: .2083rem;
     margin: 0 auto;
 }
 
 .nav-content ul li {
     display: none;
-    width: 87.5rem;
+    width: 7.2917rem;
     cursor: pointer;
 }
 
 .nav-content ul li:first-child {
     display: block;
-    width: 87.5rem;
+    width: 7.2917rem;
 }
 
 .con-left {
@@ -200,47 +204,50 @@ header a:last-child {
 }
 
 .con-left img {
-    width: 38.75rem;
-    height: 25rem;
+    width: 3.2292rem;
+    height: 2.0833rem;
 }
 
 .con-left i {
     position: absolute;
-    left: 17.0625rem;
-    top: 9.9375rem;
-    font-size: 4.75rem;
+    left: 1.4219rem;
+    top: .8281rem;
+    font-size: .3958rem;
     opacity: .7;
 }
 
 .con-right {
     float: left;
-    margin-left: 2.5rem;
+    margin-left: .2083rem;
 }
 
 .con-right img {
-    width: 36.0625rem;
-    height: 25.125rem;
+    width: 3.0052rem;
+    height: 2.0938rem;
 }
 
+
+/* 解决方案 */
+
 .solution {
-    width: 75rem;
+    width: 6.25rem;
     margin: 0 auto;
 }
 
 .solution .content-title {
-    padding: 1.25rem 0
+    padding: .1042rem 0
 }
 
 .solution_img {
     position: relative;
     overflow: hidden;
-    border-radius: .625rem;
+    border-radius: .0521rem;
 }
 
 .solution_img img {
-    width: 24.125rem;
-    height: 20rem;
-    border-radius: .625rem;
+    width: 2.0104rem;
+    height: 1.6667rem;
+    border-radius: .0521rem;
     transition: all 0.2s;
 }
 
@@ -252,36 +259,40 @@ header a:last-child {
 .solution_title {
     position: absolute;
     bottom: 0;
-    width: 24.125rem;
-    height: 3.75rem;
-    line-height: 3.75rem;
-    font-size: 1.375rem;
+    width: 2.0104rem;
+    height: .3125rem;
+    line-height: .3125rem;
+    font-size: .1146rem;
     font-weight: 700;
     text-align: left;
     background-color: rgba(255, 255, 255, .7);
 }
 
 .solution_cont {
-    width: 24.125rem;
-    height: 3.75rem;
-    line-height: 1.875rem;
-    font-size: 1.125rem;
+    width: 2.0104rem;
+    height: .3125rem;
+    line-height: .1563rem;
+    font-size: .0938rem;
     font-weight: 400;
     color: #333333;
 }
 
 .swiper {
-    width: 75rem;
-    height: 28.125rem;
+    width: 6.25rem;
+    height: 2.3438rem;
     /* background-color: pink; */
 }
 
 .programme img {
     cursor: pointer;
+    width: 100%;
 }
 
+
+/* 客户案例 */
+
 .case-content {
-    width: 75rem;
+    width: 6.25rem;
     margin: 0 auto;
 }
 
@@ -295,11 +306,11 @@ header a:last-child {
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
-    width: 24.125rem;
-    height: 13.5625rem;
-    margin-right: .9375rem;
-    margin-top: .9375rem;
-    border-radius: .625rem;
+    width: 2.0104rem;
+    height: 1.1302rem;
+    margin-right: .0781rem;
+    margin-top: .0781rem;
+    border-radius: .0521rem;
 }
 
 .case-content ul li:nth-child(3n) {
@@ -307,9 +318,9 @@ header a:last-child {
 }
 
 .case-content li img:first-child {
-    width: 24.125rem;
-    height: 13.5625rem;
-    border-radius: .625rem;
+    width: 2.0104rem;
+    height: 1.1302rem;
+    border-radius: .0521rem;
     cursor: pointer;
     transition: all 0.2s;
 }
@@ -320,41 +331,55 @@ header a:last-child {
 
 .play {
     position: absolute;
-    left: 10.5rem;
-    top: 5.75rem;
-    width: 3.125rem;
-    height: 3.125rem;
+    left: .875rem;
+    top: .4792rem;
+    width: .2604rem;
+    height: .2604rem;
     opacity: .7;
 }
 
+
+/* 专业版定制 */
+
 .reserve {
-    width: 75rem;
-    height: 11.25rem;
-    border-radius: .625rem;
-    padding-top: 2.5rem;
+    width: 6.25rem;
+    height: .9375rem;
+    border-radius: .0521rem;
+    padding-top: .2083rem;
     margin: 0 auto;
     cursor: pointer;
 }
 
+.reserve img {
+    width: 100%;
+}
+
+
+/* 尾部 */
+
 footer {
-    width: 75rem;
+    width: 6.25rem;
     margin: 0 auto;
 }
 
 .keji img {
     cursor: pointer;
+    width: 100%;
 }
+
+
+/* 公司介绍 */
 
 .introduce {
     display: flex;
     justify-content: space-between;
-    margin-top: 2.5rem;
+    margin-top: .2083rem;
 }
 
 .introduce p {
-    width: 35.375rem;
-    font-size: 1rem;
-    line-height: 2rem;
+    width: 2.9479rem;
+    font-size: .0833rem;
+    line-height: .1667rem;
 }
 
 .introduce p span {
@@ -367,19 +392,19 @@ footer {
 }
 
 .join img {
-    width: 75rem;
+    width: 6.25rem;
     cursor: pointer;
 }
 
 .contact {
     display: flex;
-    margin-top: 2.5rem;
+    margin-top: .2083rem;
     justify-content: space-between;
 }
 
 .contact p {
-    font-size: 1rem;
-    line-height: 2.5rem;
+    font-size: .0833rem;
+    line-height: .2083rem;
 }
 
 .contact span {
@@ -387,69 +412,76 @@ footer {
     text-decoration: underline;
 }
 
+
+/* 商标 */
+
 .copyright {
-    margin-top: 2.5rem;
+    margin-top: 40px;
     background-color: #2e3a59;
     text-align: center;
-    height: 3.75rem;
-    line-height: 3.75rem;
-    font-size: 1rem;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
     color: #fff;
 }
 
+
+/* 侧边栏 */
+
 .Map-left {
+    display: none;
     position: fixed;
-    top: 12.5rem;
+    top: 200px;
     left: 0;
-    width: 12.5rem;
-    height: 27.75rem;
+    width: 200px;
+    height: 444px;
     background: url(../images/mapleft2.png) no-repeat;
     z-index: 2;
 }
 
 .Map-left h1 {
     position: absolute;
-    top: 13.125rem;
-    left: 1rem;
+    top: 210px;
+    left: 16px;
     text-align: center;
-    padding: .625rem 0;
-    width: 10.625rem;
-    font-size: 1rem;
+    padding: 10px 0;
+    width: 170px;
+    font-size: 16px;
     font-weight: 700;
-    border-bottom: .0625rem solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
 .Map-left h2 {
     position: absolute;
-    top: 16.25rem;
-    left: 1rem;
+    top: 260px;
+    left: 16px;
     text-align: center;
-    padding: .625rem 0;
-    width: 10.625rem;
-    font-size: 1rem;
+    padding: 10px 0;
+    width: 170px;
+    font-size: 16px;
     font-weight: 700;
-    border-bottom: .0625rem solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
 .Map-left h3 {
     position: absolute;
-    top: 19.375rem;
-    left: 1rem;
+    top: 310px;
+    left: 16px;
     text-align: center;
-    padding: .625rem 0;
-    width: 10.625rem;
-    font-size: 1rem;
+    padding: 10px 0;
+    width: 170px;
+    font-size: 16px;
     font-weight: 700;
 }
 
 .Map-left h4 {
     position: absolute;
-    top: 24.5625rem;
-    left: 1rem;
+    top: 393px;
+    left: 16px;
     text-align: center;
-    padding: .625rem 0;
-    width: 10.625rem;
-    font-size: 1rem;
+    padding: 10px 0;
+    width: 170px;
+    font-size: 16px;
     font-weight: 700;
     cursor: pointer;
     color: #fff;
@@ -463,76 +495,77 @@ h3:hover {
 }
 
 .Map-right {
+    display: none;
     position: fixed;
-    top: 9.375rem;
-    right: .3125rem;
-    width: 5rem;
-    height: 15.3125rem;
+    top: 150px;
+    right: 5px;
+    width: 80px;
+    height: 245px;
     z-index: 2;
 }
 
 .Map-right p {
-    margin-bottom: .125rem;
+    margin-bottom: 2px;
     cursor: pointer;
 }
 
 .wechat {
     position: relative;
-    width: 5rem;
-    height: 5rem;
+    width: 80px;
+    height: 80px;
 }
 
 .wechat a {
     display: block;
-    width: 5rem;
-    height: 5rem;
+    width: 80px;
+    height: 80px;
     overflow: hidden;
 }
 
 .wechat a:hover img {
-    transform: translateX(-5rem);
+    transform: translateX(-80px);
 }
 
 .wechatimg {
     position: absolute;
     display: none;
     top: 0;
-    left: -15.625rem;
-    width: 15rem;
-    height: 15.25rem;
+    left: -250px;
+    width: 240px;
+    height: 244px;
     text-align: center;
-    line-height: 13.125rem;
-    border-radius: .625rem;
+    line-height: 210px;
+    border-radius: 10px;
     background-color: #fff;
-    box-shadow: -0.125rem -0.125rem .625rem #333333;
+    box-shadow: -2px -2px 10px #333333;
 }
 
 .wechatimg img {
     position: relative;
     /* display: none; */
-    width: 11.25rem;
-    height: 11.25rem;
+    width: 180px;
+    height: 180px;
 }
 
 .wechatimg h1 {
-    margin-top: -0.625rem;
-    height: 1.25rem;
-    line-height: 1.25rem;
-    font-size: 1.0625rem;
+    margin-top: -10px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 17px;
     color: #ccc;
 }
 
 .wechatimg i {
     position: absolute;
-    top: -3.75rem;
-    right: -0.5rem;
-    font-size: .625rem;
+    top: -60px;
+    right: -8px;
+    font-size: 10px;
     color: #ffffff;
 }
 
 .Map-right p:last-child {
-    line-height: 5rem;
-    font-size: 1rem;
+    line-height: 80px;
+    font-size: 16px;
     text-align: center;
     color: #fff;
     background-color: #0093ff;
@@ -540,54 +573,54 @@ h3:hover {
 
 .contact-phone {
     position: relative;
-    width: 5rem;
-    height: 5rem;
+    width: 80px;
+    height: 80px;
     overflow: hidden;
 }
 
 .contact-phone a:hover img {
-    transform: translateX(-5rem);
+    transform: translateX(-80px);
 }
 
 .phone {
     position: absolute;
     display: none;
-    width: 13.8125rem;
-    height: 5rem;
-    top: 5.125rem;
-    right: 5.25rem;
-    border-radius: .3125rem;
+    width: 221px;
+    height: 80px;
+    top: 82px;
+    right: 84px;
+    border-radius: 5px;
     background-color: #ffffff;
-    box-shadow: -0.125rem -0.125rem .625rem #333333;
+    box-shadow: -2px -2px 10px #333333;
 }
 
 .phone span {
     display: block;
     float: left;
     box-sizing: border-box;
-    width: 2.5rem;
-    height: 2.5rem;
-    line-height: 2.5rem;
-    border-radius: 1.25rem;
-    margin: 1.25rem .625rem;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    margin: 20px 10px;
     text-align: center;
     background-color: #ffffff;
 }
 
 .phone span img {
-    width: 1.875rem;
-    height: 1.875rem;
+    width: 30px;
+    height: 30px;
 }
 
 .phone h1 {
     position: relative;
-    font-size: 1rem;
-    padding: 1.25rem .625rem;
+    font-size: 16px;
+    padding: 20px 10px;
 }
 
 .phone h1 em {
     color: red;
-    font-size: 1.125rem;
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -596,14 +629,14 @@ h3:hover {
 
 .phone i {
     position: absolute;
-    top: 2.125rem;
-    right: -0.5rem;
-    font-size: .3125rem;
+    top: 34px;
+    right: -8px;
+    font-size: 5px;
     color: #ffffff;
 }
 
 .layui-btn {
     position: absolute;
-    right: .625rem;
-    bottom: .625rem;
+    right: 10px;
+    bottom: 10px;
 }
