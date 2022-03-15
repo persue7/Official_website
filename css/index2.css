@@ -83,23 +83,29 @@ header a {
 .pain_box ul {
     display: flex;
     justify-content: space-around;
-    padding-top: .2083rem;
-    width: 6.25rem;
+    /* padding-top: .2083rem; */
+    width: 100%;
     flex-wrap: wrap;
 }
 
 .pain_box ul li {
     display: flex;
+    width: 30%;
     width: 1.8229rem;
-    margin-left: .1042rem;
+    /* margin-left: .1042rem;
     margin-right: .1042rem;
     margin-bottom: .2083rem;
-    margin-top: .0521rem;
+    margin-top: .0521rem; */
+}
+
+.pain-left {
+    width: .4167rem;
+    height: .4167rem;
 }
 
 .pain-left img {
-    width: .4063rem;
-    height: .4063rem;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
     transition: all 0.3s linear;
 }
@@ -116,16 +122,9 @@ header a {
 
 @media screen and (max-width:750px) {}
 
-* {
-    font-size: 100%;
-}
-
-span {
-    font-size: 0.5em;
-}
-
 .pain_title {
     display: inline-block;
+    width: 100%;
     font-size: .1146rem;
     font-weight: 800;
 }

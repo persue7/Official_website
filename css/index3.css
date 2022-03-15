@@ -1,10 +1,10 @@
-header {
-    position: relative;
-    width: 100%;
+body {
+    width: 750px;
 }
 
-header a {
-    display: inline-block;
+header {
+    position: relative;
+    width: 750px;
 }
 
 header a:last-child {
@@ -14,6 +14,10 @@ header a:last-child {
 }
 
 .headerImg {
+    width: 100%;
+}
+
+.logImg {
     width: 100%;
 }
 
@@ -59,7 +63,6 @@ header a:last-child {
     padding-top: 40px;
     width: 1200px;
     flex-wrap: wrap;
-    cursor: pointer;
 }
 
 .pain_box ul li {
@@ -568,5 +571,5 @@ h3:hover {
 .layui-btn {
     position: absolute;
     right: 10px;
-    bottom: -55px
+    bottom: 10px;
 }

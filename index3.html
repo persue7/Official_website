@@ -13,17 +13,18 @@
     <!-- 引入swiper样式 -->
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" type="text/css">
     <!-- 引入自己样式 -->
-    <link rel="stylesheet" href="./css/index2.css" type="text/css" media="screen and (max-width:750px)">
-    <script src="./js/flexible.js"></script>
+    <link rel="stylesheet" href="./css/myless.css" type="text/css" media="screen and (max-width:751px)">
+    <link rel="stylesheet" href="./css/index.css" type="text/css" media="screen and (min-width:751px)">
+
 </head>
 
 <body>
     <!-- 头部 -->
     <header id="top">
-        <a href="#">
+        <a href="javascript:;" onclick="showMsg()">
             <img src="./images/title.jpg" alt="" class="headerImg">
         </a>
-        <a href="#"><img src="./images/logo.png" alt="" class="logoImg"></a>
+        <a href="javascript:;"><img src="./images/logo.png" alt="" class="logoImg"></a>
     </header>
     <!-- 主体 -->
     <main>
@@ -31,7 +32,7 @@
             <h1>企业面临的痛点·Pain point</h1>
         </div>
         <!-- 企业痛点 -->
-        <div class="pain_box">
+        <div class="pain_box" onclick="showMsg()">
             <ul>
                 <li>
                     <div class="pain-left "><img src="./images/ui (1).png" alt=""></div>
@@ -90,9 +91,9 @@
             </div>
             <div class="nav">
                 <ul>
-                    <li>钉钉专业版</li>
+                    <li id="first">钉钉专业版</li>
                     <li>钉钉专属版</li>
-                    <li>钉钉定制版</li>
+                    <li id="second">钉钉定制版</li>
                     <li>钉钉基础版</li>
                 </ul>
             </div>
@@ -136,7 +137,7 @@
             </div>
         </div>
         <!-- 解决方案 -->
-        <div class="solution">
+        <div class="solution" onclick="showMsg()">
             <!-- 解决方案1 -->
             <div class="content-title">
                 <h1>钉钉<span>业财一体</span>解决方案·solution
@@ -298,7 +299,7 @@
             </div>
         </div>
         <!-- 专业版定制 -->
-        <div class="reserve">
+        <div class="reserve" onclick="showMsg()">
             <img src="./images/reserve.jpg" alt="">
         </div>
     </main>
@@ -307,11 +308,10 @@
         <div class="content-title">
             <h1>了解我们·Learn</h1>
         </div>
-        <div class="keji">
+        <div class="keji" onclick="showMsg()">
             <img src="./images/learn.jpg" alt="">
         </div>
-        <!-- 公司介绍 -->
-        <div class="introduce">
+        <div class="introduce" onclick="showMsg()">
             <p>
                 深圳千帆创科科技有限公司，注册资金1000万元，2009年成立至今，致力于为企业打开互联网经济大门，投身数字信息化潮流提供专业、便捷、全面的集成、系统软件开发和互联网云服务。自成立以来，积累了各个行业众多的大中小企事业单位客户，在业界拥有良好的合作口碑。公司也在不断自身完善服务体系的同时，增强自身研发能力、上云技术支持力量以及丰富的经验、信息资源和市场运作实力。<br> 我们可以提供钉钉专属服务和技术支持，专业1v1售后客服24小时在线，同时申请企业版钉钉折扣和代金券，更便宜。
                 咨询客服可以在线获取企业解决方案
@@ -328,10 +328,10 @@
         </div>
         <div class="contact">
             <p>
-                微信咨询： <span>xxxxxxxxx</span> <br> 钉钉开发、销售、行业解决方案、部署五星级服务商，支持全国服务！ <br> 深圳市万庭大厦三栋705 <br> Shenzhen Qianfan Chuangke Technology Co., Ltd
+                微信咨询： <span>13880474883</span> <br> 钉钉开发、销售、行业解决方案、部署五星级服务商，支持全国服务！ <br> 深圳市万庭大厦三栋705 <br> Shenzhen Qianfan Chuangke Technology Co., Ltd
             </p>
             <p>
-                有任何疑问或需求可发送至邮箱，我们会第一时间联系您 <br> QQ邮箱：<span>xxxxx</span><br> 咨询热线/钉钉： <span>xxxxxxx</span> <br> 不受理封号、被盗、激活等账号个人问题！
+                有任何疑问或需求可发送至邮箱，我们会第一时间联系您 <br> QQ邮箱：<span>13880474883</span><br> 咨询热线/钉钉： <span>13880474883</span> <br> 不受理封号、被盗、激活等账号个人问题！
             </p>
         </div>
     </footer>
@@ -340,9 +340,13 @@
     </div>
     <!-- 侧边栏 -->
     <div class="Map-left">
-        <h1>钉钉专业版</h1>
-        <h2>申请代金券</h2>
-        <h3>钉钉定制版</h3>
+        <a href="#first">
+            <h1>钉钉专业版</h1>
+        </a>
+        <h2 onclick="showMsg()">申请代金券</h2>
+        <a href="#second">
+            <h3>钉钉定制版</h3>
+        </a>
         <a href="#top">
             <h4>返回顶部</h4>
         </a>
@@ -360,18 +364,44 @@
             <a href="#"><img src="./images/mapright (2).png" alt=""></a>
             <div class="phone">
                 <span><img src="./images/maprightphone.png" alt=""></span>
-                <h1>咨询热线<br><em>18888888888</em>
+                <h1>咨询热线<br><em>13880474883</em>
                     <i class="layui-icon layui-icon-triangle-r"></i>
                 </h1>
             </div>
         </p>
-        <p>立即咨询</p>
+        <p onclick="showMsg()">立即咨询</p>
     </div>
 
     <script src="./js/layui.js"></script>
-    <script src="./js/index.js"></script>
+    <!-- <script src="./js/index.js"></script> -->
     <script src="./js/swiper-bundle.min.js"></script>
+    <!-- 适配JS -->
+    <script type="text/javascript">
+        function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            // document.writeln("您的浏览设备为：");  
+            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
 
+                // alert("手机浏览！");  
+
+                document.write('<script type="text/javascript" charset="utf-8" src="./js/phone.js"><\/script>');
+            } else {
+
+                // alert("PC浏览！");  
+                document.write('<script type="text/javascript" charset="utf-8" src="./js/index.js"><\/script>');
+            }
+        }
+        browserRedirect();
+    </script>
+    <!-- 轮播 -->
     <script>
         var swiper = new Swiper(".mySwiper", {
             autoplay: {
@@ -390,6 +420,19 @@
             paginationClickable: true,
             spaceBetween: 21
         });
+
+        function showMsg() {
+            var img = '<img src="../images/wechat.jpg">'
+            layer.open({
+                type: 1, //Page层类型
+                // area: ['235px', '235px'],
+                title: '更多请咨询微信哦！',
+                shade: 0.6, //遮罩透明度
+                maxmin: true, //允许全屏最小化
+                anim: 1, //0-6的动画形式，-1不开启
+                content: img
+            });
+        }
     </script>
 
 </body>

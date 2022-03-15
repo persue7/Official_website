@@ -1,5 +1,6 @@
 window.addEventListener('load', function() {
 
+
     //右侧边栏电话
     var contact_phone = document.querySelector('.contact-phone')
     var phone = document.querySelector('.phone')
@@ -59,10 +60,10 @@ window.addEventListener('load', function() {
                 shade: 0.7,
                 scrollbar: false,
                 skin: 'layer-alert-video',
-                area: ["1000px", "680px"],
+                area: ["300px", "230px"],
                 anim: 0,
                 scrollbar: true, //防止父页面自动跳到页面顶端
-                content: '<div style="line-height:0;font-size:0;"><video width="100%" height="100%"  controls="controls" autobuffer="autobuffer"  autoplay="autoplay" loop="loop" src="' + videos[i] + '" style="width:100%;height:100%;"></video><button type="button" class="layui-btn layui-btn-normal" onclick="formClose()">关闭</button></div>'
+                content: '<div style="line-height:0;font-size:0;"><video width="100%" height="100%"  controls="controls" autobuffer="autobuffer"  autoplay="autoplay" loop="loop" src="' + videos[i] + '" style="100%;height:100%;"></video><button type="button" class="layui-btn layui-btn-normal" onclick="formClose()">关闭</button></div>'
             });
         })
 
@@ -84,10 +85,10 @@ window.addEventListener('load', function() {
                 shade: 0.7,
                 scrollbar: false,
                 skin: 'layer-alert-video',
-                area: ["1000px", "680px"],
+                area: ["300px", "230px"],
                 anim: 0,
                 scrollbar: true, //防止父页面自动跳到页面顶端
-                content: '<div style="line-height:0;font-size:0;position:relative"><video width="100%" height="100%"  controls="controls" autobuffer="autobuffer"  autoplay="autoplay" loop="loop" src="' + casevideos[i] + '" style="width:100%;height:100%;"></video><button type="button" class="layui-btn layui-btn-normal" onclick="caseClose()">关闭</button></div>'
+                content: '<div style="line-height:0;font-size:0;"><video width="100%" height="100%"  controls="controls" autobuffer="autobuffer"  autoplay="autoplay" loop="loop" src="' + casevideos[i] + '" style="width:100%;height:100%;"></video><button type="button" class="layui-btn layui-btn-normal" onclick="caseClose()">关闭</button></div>'
             });
         })
     }
@@ -109,7 +110,7 @@ window.addEventListener('load', function() {
         var img = '<img src="../images/wechat.jpg">'
         layer.open({
             type: 1, //Page层类型
-            // area: ['500px', '300px'],
+            area: ['235px', '235px'],
             title: '更多消息请咨询微信哦！',
             shade: 0.6, //遮罩透明度
             maxmin: true, //允许全屏最小化
