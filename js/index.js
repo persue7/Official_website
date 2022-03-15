@@ -87,7 +87,7 @@ window.addEventListener('load', function() {
                 area: ["1000px", "680px"],
                 anim: 0,
                 scrollbar: true, //防止父页面自动跳到页面顶端
-                content: '<div style="line-height:0;font-size:0;position:relative"><video width="100%" height="100%"  controls="controls" autobuffer="autobuffer"  autoplay="autoplay" loop="loop" src="' + casevideos[i] + '" style="width:100%;height:100%;"></video><button type="button" class="layui-btn layui-btn-normal" onclick="caseClose()">关闭</button></div>'
+                content: '<div style="line-height:0;font-size:0"><video width="100%" height="100%"  controls="controls" autobuffer="autobuffer"  autoplay="autoplay" loop="loop" src="' + casevideos[i] + '" style="width:100%;height:100%;"></video><button type="button" class="layui-btn layui-btn-normal" onclick="caseClose()">关闭</button></div>'
             });
         })
     }
